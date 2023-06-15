@@ -1,0 +1,11 @@
+https://gnidan.github.io/abi-to-sol/
+https://jamesbachini.com/foundry-tutorial/
+
+
+// MUMBAI
+// forge script script/DeployProfile.s.sol:DeployScript --rpc-url $RPC_URL_MAINNET --broadcast --legacy -vvvv
+
+// LOCALHOST
+// anvil -m $MNEMONIC
+// ngrok http 8545 - to make localhost available to RN app
+// forge script script/DeployProfile.s.sol:DeployScript --rpc-url $RPC_URL_LOCALHOST --broadcast -vvvv

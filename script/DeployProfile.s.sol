@@ -4,7 +4,13 @@ pragma solidity ^0.8.13;
 import "forge-std/Script.sol";
 import { EmbraceProfile } from "../src/EmbraceProfile.sol";
 
-// forge script script/DeployProfile.s.sol:DeployScript --rpc-url $RPC_URL_MUMBAI --broadcast --verify -vvvv
+// MUMBAI
+// forge script script/DeployProfile.s.sol:DeployScript --rpc-url $RPC_URL_MAINNET --broadcast --legacy -vvvv
+
+// LOCALHOST
+// anvil -m $MNEMONIC
+// ngrok http 8545 - to make localhost available to RN app
+// forge script script/DeployProfile.s.sol:DeployScript --rpc-url $RPC_URL_LOCALHOST --broadcast -vvvv
 
 contract DeployScript is Script {
     address internal deployer;
